@@ -1,0 +1,14 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "sourceMap": false,
+        "moduleResolution": "node",
+        "outDir": "built",
+        "typeRoots": ["node_modules/@types"]
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "src/**/*.test.ts"]
+}
