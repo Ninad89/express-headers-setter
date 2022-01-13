@@ -2,8 +2,10 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
+    verbose: true,
     clearMocks: true,    
-    collectCoverage :true,    
+    collectCoverage :true,
+    testMatch:['**/src/*.spec.ts'],    
     //coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
     collectCoverageFrom:[
       'src/**/*.ts'
@@ -12,7 +14,7 @@ module.exports = {
     coverageReporters: [
         // "json",
         'text',
-        // "lcov",
+        "lcov",
         // "clover"
     ],
     // An object that configures minimum threshold enforcement for coverage results
