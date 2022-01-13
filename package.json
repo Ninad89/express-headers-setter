@@ -1,13 +1,14 @@
 {
   "name": "express-set-headers-mw",
   "version": "0.0.1",
-  "description": "Express middlewear to set headers ",
+  "description": "Express middleware to set headers ",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf built && tsc",
     "tslint": "tslint src/**/*.ts",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "prepare": "husky install",
     "prepublishOnly": "npm run tslint && npm test && npm run build"
   },
@@ -17,11 +18,13 @@
     "@babel/preset-typescript": "^7.8.3",
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.4.0",
     "babel-jest": "^25.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
     "jest": "^27.4.5",
+    "jest-mock-req-res": "^1.0.2",
     "rimraf": "^3.0.2",
     "tslint": "^5.20.1",
     "typescript": "^3.7.5"
@@ -32,7 +35,7 @@
   },
   "keywords": [
     "express",
-    "middlwear",
+    "middleware",
     "headers",
     "response",
     "request",
@@ -44,5 +47,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "peerDependencies": {
+    "express": "^4.17.2"
   }
 }
