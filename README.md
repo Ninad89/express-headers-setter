@@ -1,6 +1,10 @@
 # express-headers-setter
 Middleware to set response headers in express app
 
+
+[![Node.js CI](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml/badge.svg)](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml)
+![GitHub](https://img.shields.io/github/license/Ninad89/express-headers-setter?style=plastic)
+
 This middleware will help you to set up response headers in 3 different way.
 1. Static Headers (Value is fixed while configuring this Middleware)
 2. Dynamically calculated headers (Value is calculated dynamically)
