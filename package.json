@@ -2,7 +2,7 @@
   "name": "express-set-headers-mw",
   "version": "0.0.1",
   "description": "Express middleware to set headers ",
-  "main": "dist/index.js",
+  "main": "built/index.js",
   "scripts": {
     "build": "rimraf built && tsc",
     "tslint": "tslint src/**/*.ts",
@@ -31,8 +31,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/Ninad89/express-headers-setter.git"
   },
+  "homepage": "https://github.com/Ninad89/express-headers-setter",
   "keywords": [
     "express",
     "middleware",
