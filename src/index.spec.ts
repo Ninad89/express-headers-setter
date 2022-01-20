@@ -1,17 +1,17 @@
-import { NextFunction, Request, Response } from 'express';
+import { Request } from 'express';
 import { mockRequest, mockResponse } from 'jest-mock-req-res';
 
-import getMiddleware, { IConfig } from './index';
+import createSetHeadersMiddleware, { IConfig } from './index';
 
 describe('First test', () => {
     it('Should return function ', () => {
-        expect(typeof getMiddleware()).toBe('function');
+        expect(typeof createSetHeadersMiddleware()).toBe('function');
     });
 
     it('Middleware should call next function', () => {
         const nextFun = jest.fn();
         const config = {};
-        const mw = getMiddleware(config);
+        const mw = createSetHeadersMiddleware(config);
         const req = mockRequest();
         const res = mockResponse();
 
@@ -28,7 +28,7 @@ describe('First test', () => {
                 'Cache-Control': 'no-cache',
             },
         };
-        const mw = getMiddleware(config);
+        const mw = createSetHeadersMiddleware(config);
         const req = mockRequest();
         const res = mockResponse();
 
@@ -56,7 +56,7 @@ describe('First test', () => {
             copyFromRequestHeaders: ['x-correlation-id', 'x-app', 'x-test-1', 'x-test-2'],
         };
 
-        const mw = getMiddleware(config);
+        const mw = createSetHeadersMiddleware(config);
 
         const req = mockRequest({ headers: reqHeaders, get: getReqHeader });
         const res = mockResponse();
@@ -89,7 +89,7 @@ describe('First test', () => {
             },
         };
 
-        const mw = getMiddleware(config);
+        const mw = createSetHeadersMiddleware(config);
 
         const req = mockRequest();
         const res = mockResponse();

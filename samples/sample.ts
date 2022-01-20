@@ -1,5 +1,5 @@
 import express, { Request } from 'express';
-import getSetHeaderMW, { IConfig } from '../src/index';
+import createSetHeadersMiddleware, { IConfig } from '../src/index';
 // import getSetHeaderMW from 'express-set-headers-mw';
 
 const app = express();
@@ -21,7 +21,7 @@ const headerSetterConfig: IConfig = {
         'x-client-name': resolveClientNameHeader,
     },
 };
-const headerSetter = getSetHeaderMW(headerSetterConfig);
+const headerSetter = createSetHeadersMiddleware(headerSetterConfig);
 
 app.use(headerSetter);
 app.use('/', (req, res) => {
