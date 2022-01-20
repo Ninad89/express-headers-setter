@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-function getMiddleware({
+function createSetHeadersMiddleware({
     dynamicHeaders = {},
     staticHeaders = {},
     copyFromRequestHeaders = [],
@@ -41,4 +41,4 @@ interface IDynamicValues {
     [key: string]: (arg0: Request) => string;
 }
 
-export default getMiddleware;
+export default createSetHeadersMiddleware;
