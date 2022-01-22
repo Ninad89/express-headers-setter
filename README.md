@@ -1,6 +1,7 @@
 # express-headers-setter
 Middleware to set response headers in express app
 
+[![NPM](https://nodei.co/npm/express-set-headers-mw.png?compact=true)](https://nodei.co/npm/express-set-headers-mw/)
 
 [![Node.js CI](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml/badge.svg)](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml)
 ![GitHub](https://img.shields.io/github/license/Ninad89/express-headers-setter?style=plastic)
@@ -14,7 +15,7 @@ This middleware will help you to set up response headers in 3 different way.
 
 Middleware can be configured using following method which accepts [`IConfig`](#IConfig) parameter
 
-### `getMiddleware(config:IConfig)` 
+### `createSetHeadersMiddleware(config:IConfig)` 
 This method will return configured middleware function that sets headers on the response based on configurations.
     
 #### `IConfig`
