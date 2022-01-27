@@ -2,9 +2,9 @@
 Middleware to set response headers in express app
 
 [![NPM](https://nodei.co/npm/express-set-headers-mw.png?compact=true)](https://nodei.co/npm/express-set-headers-mw/)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNinad89%2Fexpress-headers-setter.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FNinad89%2Fexpress-headers-setter?ref=badge_shield)
 
 [![Node.js CI](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml/badge.svg)](https://github.com/Ninad89/express-headers-setter/actions/workflows/node.js.yml)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FNinad89%2Fexpress-headers-setter.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FNinad89%2Fexpress-headers-setter?ref=badge_shield)
 ![GitHub](https://img.shields.io/github/license/Ninad89/express-headers-setter?style=plastic)
 
 This middleware will help you to set up response headers in 3 different way.
