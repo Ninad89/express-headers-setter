@@ -22,4 +22,6 @@ jobs:
     - run: npm run tslint
     - run: npm test
     - run: npm run build
-    
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
+
