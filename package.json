@@ -24,7 +24,7 @@
     "babel-jest": "^25.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
-    "jest": "^27.4.5",
+    "jest": "^27.4.7",
     "jest-mock-req-res": "^1.0.2",
     "rimraf": "^3.0.2",
     "tslint": "^5.20.1",
