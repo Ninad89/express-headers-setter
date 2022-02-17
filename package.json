@@ -14,7 +14,7 @@
     "prepublishOnly": "npm run tslint && npm test && npm run build"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.2",
+    "@babel/core": "^7.17.4",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.8.3",
     "@commitlint/cli": "^16.1.0",
